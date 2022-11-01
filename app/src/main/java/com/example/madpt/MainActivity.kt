@@ -75,6 +75,7 @@ class MainActivity : AppCompatActivity() {
         val bnv = findViewById<View>(R.id.bnv_main) as BottomNavigationView
         updateBottomMenu(bnv)
     }
+
     fun setFragment() {
         val transaction = supportFragmentManager.beginTransaction()
             .add(R.id.fl_container, MainPageFragment())

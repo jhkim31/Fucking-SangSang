@@ -37,7 +37,7 @@ class TrainingFragment : Fragment(), OnRecyclerClickListener, OnRemove, SetBreak
         5.toLong() to "MOUNTAIN CLIMBING",
         6.toLong() to "SIDE LATERAL RAISE",
         7.toLong() to "SIDE LUNGE",
-        8.toLong() to "DUMBEL CURL"
+        8.toLong() to "DUMBBEL CURL"
 
     )
     private val exerciseImage = mapOf<Long, Int>(

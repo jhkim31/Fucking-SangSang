@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/trainList"
+    android:background="@drawable/round_layout_button"
     android:layout_height="50dp"
     android:layout_width="50dp">
     

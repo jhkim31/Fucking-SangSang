@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/backgroungblack"
+    android:background="@color/backgroundpurple"
     android:weightSum="100">
 
     <LinearLayout
@@ -14,6 +14,7 @@
         android:layout_height="0dp"
         android:layout_weight="10"
         android:orientation="horizontal"
+        android:background="@color/recpurple"
         android:weightSum="20">
 
         <Space
@@ -27,12 +28,12 @@
             android:layout_weight="14"
             android:fontFamily="@font/bold"
             android:gravity="center|left"
-            android:text = "Exercise"
+            android:text="Mad PT"
             android:textColor="@color/white"
             android:textSize="30dp" />
 
         <Button
-            android:id="@+id/btn_breakTime"
+            android:id="@+id/btn_Camera"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:background="@drawable/round_layout_button"
@@ -40,7 +41,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
             android:layout_weight="4"
-            android:text="쉬는시간" />
+            android:text="시작" />
 
         <Space
             android:layout_width="0dp"
@@ -66,7 +67,7 @@
             android:layout_height="match_parent"
             android:layout_weight="18"
             android:orientation="horizontal"
-            android:background="@drawable/round_layout_meal"
+            android:background="@drawable/round_lauout_white"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         <Space
@@ -81,32 +82,6 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="5"
-        android:orientation="horizontal">
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-        <Button
-            android:id="@+id/btn_Camera"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:textColor="@color/white"
-            android:background="@drawable/round_layout_button"
-            android:layout_weight="18"
-            android:text="운동 시작" />
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-    </LinearLayout>
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
         android:layout_weight="10"
         android:weightSum="20">
 
@@ -118,18 +93,26 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="18"
+            android:layout_weight="14"
             android:fontFamily="@font/bold"
             android:gravity="center|left"
             android:text="운동 리스트"
-            android:textColor="@color/white"
+            android:textColor="#575757"
             android:textSize="30dp" />
-
+        <Button
+            android:id="@+id/btn_breakTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:background="@drawable/round_layout_button"
+            android:layout_weight="4"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="쉬는 시간" />
         <Space
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
-
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -147,7 +130,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="18"
-            android:background="@color/backgroungblack"
+            android:background="@color/backgroundpurple"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         <Space
@@ -159,7 +142,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6"
+        android:layout_weight="7"
         android:weightSum="20"
         android:orientation="horizontal">
         <Space

@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    card_view:cardBackgroundColor="@color/backgroungblack"
+    card_view:cardBackgroundColor="@color/white"
     android:layout_width="match_parent"
     android:layout_height="80dp"
     android:id="@+id/traing_card_view"
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:background="@drawable/round_layout_meal"
+        android:background="@color/white"
         android:weightSum="20">
         <Space
             android:layout_width="0dp"
@@ -25,6 +25,7 @@
             android:layout_width="0dp"
             android:layout_marginTop="15dp"
             android:layout_height="50dp"
+            android:background="@drawable/round_layout_button"
             android:layout_weight="4" />
 
         <TextView
