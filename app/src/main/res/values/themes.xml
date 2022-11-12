@@ -27,11 +27,13 @@
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
     <style name="numberPickerCustom">
         <item name="android:textSize">25dp</item>
         <item name="android:editTextColor">@color/white</item>
         <item name="android:colorControlNormal">@color/white</item>
     </style>
+
     <style name="dialogTheme" parent="Theme.AppCompat.Dialog">
         <item name="android:background">@color/backgroungblack</item>
         <item name="android:windowFullscreen">true</item>
@@ -40,4 +42,13 @@
         <item name="android:navigationBarColor">@color/backgroungblack</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/backgroungblack</item>
     </style>
+
+    <style name="Theme.MADPT.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MADPT.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MADPT.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

@@ -17,7 +17,7 @@
     <color name="calendar_toolbar_color">#282828</color>
     <color name="backgroungblack">#292929</color>
     <color name="backgroundpurple">#E9EAF2</color>
-    <color name="recpurple">#D9DDF1</color>
+    <color name="recpurple">#E9EAF2</color>
     <color name="btnpurple">#ADB5E2</color>
     <color name="maincolor">#B667F1</color>
     <color name="meal_input">#404040</color>
@@ -25,4 +25,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="puple">#B9B9F9</color>
     <color name="mint">#90E8E5</color>
+    <color name="header">#ADB5E2</color>
+    <color name="pink">#FFC0CB</color>
 </resources>
