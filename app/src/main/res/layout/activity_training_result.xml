@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="100"
-    android:background="@color/backgroungblack"
+    android:background="@color/background_new"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
@@ -26,10 +26,10 @@
             android:layout_weight="6"
             android:layout_height="match_parent"
             android:gravity="center|left"
-            android:text="@string/result"
-            android:textSize="30sp"
-            android:fontFamily="@font/bold"
-            android:textColor="@color/white"/>
+            android:text="운동 결과"
+            android:textSize="25sp"
+            android:fontFamily="@font/notosan_regular"
+            android:textColor="@color/text_in_excrcise"/>
 
         <Space
             android:layout_width="0dp"
@@ -76,7 +76,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:orientation="horizontal"
-            android:background="@drawable/round_layout_meal"
+            android:background="@drawable/round_lauout_white"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
         <Space
@@ -121,7 +121,7 @@
                         android:layout_weight="18"
                         android:layout_marginTop="15dp"
                         android:layout_marginBottom="15dp"
-                        android:background="@drawable/round_layout_button" />
+                        android:background="@drawable/round_lauout_white" />
 
                     <Space
                         android:layout_width="0dp"
@@ -145,23 +145,24 @@
                     <TextView
                         android:id="@+id/resultTitle"
                         android:layout_width="0dp"
-                        android:layout_weight="10"
                         android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:fontFamily="@font/notosan_regular"
                         android:gravity="center|left"
-                        android:text="Excrcise Review"
-                        android:textSize="20sp"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/bold" />
+                        android:text="운동 리뷰"
+                        android:textColor="@color/text_in_excrcise"
+                        android:textSize="20sp" />
 
                     <TextView
                         android:layout_width="0dp"
-                        android:layout_weight="8"
                         android:layout_height="match_parent"
-                        android:text="Total Score"
+                        android:layout_weight="8"
+                        android:fontFamily="@font/notosan_regular"
                         android:gravity="center"
-                        android:textSize="20sp"
-                        android:textColor="@color/white"
-                        android:fontFamily="@font/bold" />
+                        android:text="총점"
+                        android:textColor="@color/text_in_excrcise"
+                        android:textSize="20sp" />
+
                     <Space
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
@@ -200,7 +201,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_weight="9"
-                            android:fontFamily="@font/bold"
+                            android:fontFamily="@font/notosan_regular"
                             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
                     </FrameLayout>
 
