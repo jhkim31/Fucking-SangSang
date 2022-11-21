@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import com.example.madpt.community.CommunityMainFragment
 import com.example.madpt.main.GoalSetPageFragment
 import com.example.madpt.main.MainPageFragment
 import com.example.madpt.main.PutWeightDialog
