@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:weightSum="100"
-    android:background="@color/backgroungblack"
+    android:background="@color/backgroundpurple"
     tools:context=".statistics.DailyExerciseStatisticsFragment">
 
     <LinearLayout
@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:gravity="left|top"
             android:textSize="35dp"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:text="0" />
 
         <TextView
@@ -30,7 +30,7 @@
             android:layout_height="match_parent"
             android:gravity="left|top"
             android:textSize="35dp"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:text=" Kcal"/>
 
     </LinearLayout>

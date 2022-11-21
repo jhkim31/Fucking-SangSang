@@ -23,7 +23,7 @@
 
         <TextView
             android:id="@+id/trainingTitle"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:gravity="center"
             android:textSize="25dp"
             android:layout_width="0dp"
@@ -45,7 +45,7 @@
             android:layout_height="match_parent"
             android:textSize="20dp"
             android:layout_marginStart="5dp"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:layout_weight="1" />
 
         <Button
@@ -53,7 +53,7 @@
             android:id="@+id/btn_set_minus"
             android:layout_gravity="center"
             android:background="#00ff0000"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:layout_width="0dp"
             android:textSize="25dp"
             android:layout_height="match_parent"
@@ -67,7 +67,7 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:textSize="25dp"
             android:ems="10"
             android:enabled="true"
@@ -78,7 +78,7 @@
             android:id="@+id/btn_set_plus"
             android:layout_gravity="center"
             android:background="#00ff0000"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:layout_width="0dp"
             android:textSize="25dp"
             android:layout_height="match_parent"
@@ -94,7 +94,7 @@
 
         <TextView
             android:text="REPS"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:gravity="center"
             android:layout_width="0dp"
             android:textSize="20dp"
@@ -108,7 +108,7 @@
             android:layout_gravity="center"
             android:layout_width="0dp"
             android:background="#00ff0000"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:textSize="25dp"
             android:layout_height="match_parent"
             android:layout_weight="0.5"/>
@@ -120,7 +120,7 @@
             android:layout_width="0dp"
             android:enabled="true"
             android:gravity="center"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:textSize="25dp"
@@ -132,7 +132,7 @@
             android:id="@+id/btn_rep_plus"
             android:background="#00ff0000"
             android:layout_gravity="center"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:layout_width="0dp"
             android:textSize="25dp"
             android:layout_height="match_parent"

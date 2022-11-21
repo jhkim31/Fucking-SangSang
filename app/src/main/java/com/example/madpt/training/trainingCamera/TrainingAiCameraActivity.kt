@@ -102,9 +102,9 @@ class TrainingAiCameraActivity : AppCompatActivity() {
         "SQUAT" to 2,
         "LUNGE" to 3,
         "SHOULDER PRESS" to 4,
-        "MOUNTAIN CLIMBING" to 5,
+        "SIDE LUNGE" to 5,
         "SIDE LATERAL RAISE" to 6,
-        "SIDE LUNGE" to 7,
+        "MOUNTAIN CLIMBING" to 7,
         "DUMBEL CURL" to 8
     )
 

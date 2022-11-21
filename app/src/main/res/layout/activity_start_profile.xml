@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroungblack"
+    android:background="@color/backgroundpurple"
     tools:context=".profile.StartProfile"
     android:weightSum="100">
 
@@ -18,7 +18,7 @@
         android:layout_height="0dp"
         android:layout_weight="10"
         android:textSize="25dp"
-        android:textColor="@color/white"
+        android:textColor="@color/text_color"
         android:gravity="center"
         android:text="키, 몸무게를 입력해주세요."/>
 
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7"
-        android:textColor="@color/white"
+        android:textColor="@color/text_color"
         android:gravity="center"
         android:textSize="25dp"
         android:text="키"/>
@@ -48,7 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="5"
-            android:solidColor="@color/backgroungblack"
+            android:solidColor="@color/backgroundpurple"
             android:theme="@style/numberPickerCustom" />
 
         <TextView
@@ -56,7 +56,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:gravity="center"
             android:textSize="30dp"
             android:text="."/>
@@ -66,7 +66,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="5"
-            android:solidColor="@color/backgroungblack"
+            android:solidColor="@color/backgroundpurple"
             android:theme="@style/numberPickerCustom" />
 
         <Space
@@ -80,7 +80,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="7"
-        android:textColor="@color/white"
+        android:textColor="@color/text_color"
         android:gravity="center"
         android:textSize="25dp"
         android:weightSum="20"
@@ -102,7 +102,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="5"
-            android:solidColor="@color/backgroungblack"
+            android:solidColor="@color/backgroundpurple"
             android:theme="@style/numberPickerCustom" />
 
         <TextView
@@ -110,7 +110,7 @@
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:gravity="center"
             android:textSize="30dp"
             android:text="."/>
@@ -120,7 +120,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="5"
-            android:solidColor="@color/backgroungblack"
+            android:solidColor="@color/backgroundpurple"
             android:theme="@style/numberPickerCustom" />
 
         <Space
@@ -149,6 +149,7 @@
             android:layout_height="match_parent"
             android:layout_weight="10"
             android:text="확인"
+            android:textColor="@color/text_color"
             android:background="@drawable/round_layout_button"/>
         <Space
             android:layout_width="0dp"
