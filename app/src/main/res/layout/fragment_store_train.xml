@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".training.StoreTrain"
     android:orientation="vertical"
-    android:background="@color/backgroungblack"
+    android:background="@color/backgroundpurple"
     android:weightSum="100">
 
     <!-- TODO: Update blank fragment layout -->
@@ -16,8 +16,7 @@
         android:textAlignment="center"
         android:gravity="center"
         android:textSize="30dp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/bold"
+        android:textColor="@color/text_color"
         android:text="운동 루틴 저장" />
 
     <LinearLayout
@@ -33,7 +32,7 @@
             android:gravity="center"
             android:layout_weight="0.7"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:text="제목: "/>
 
         <EditText
@@ -42,7 +41,7 @@
             android:layout_height="match_parent"
             android:singleLine="true"
             android:layout_weight="1.3"
-            android:textColorHint="@color/white"
+            android:textColorHint="@color/text_color"
             android:hint="제목을 입력해주세요."/>
     </LinearLayout>
 
@@ -59,7 +58,7 @@
             android:gravity="center"
             android:layout_weight="0.7"
             android:textAlignment="center"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:text="쉬는시간: "/>
         <TextView
             android:id="@+id/breakTimeSet"
@@ -68,7 +67,7 @@
             android:gravity="left|center"
             android:text="0"
             android:textSize="30dp"
-            android:textColor="@color/white"
+            android:textColor="@color/text_color"
             android:layout_weight="1.3" />
     </LinearLayout>
     <LinearLayout

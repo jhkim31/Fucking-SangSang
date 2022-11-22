@@ -10,8 +10,8 @@
         <item name="colorSecondaryVariant">@color/teal_700</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/backgroungblack</item>
-        <item name="android:navigationBarColor">@color/backgroungblack</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/backgroundpurple</item>
+        <item name="android:navigationBarColor">@color/backgroundpurple</item>
         <!-- Customize your theme here. -->
         <item name="windowNoTitle">true</item>
 
@@ -21,8 +21,8 @@
     <!--For Splash Screen-->
     <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
         <item name="android:windowBackground">@drawable/splash_background</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@color/backgroungblack</item>
-        <item name="android:navigationBarColor">@color/backgroungblack</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
         <item name="android:drawable">@mipmap/ic_launcher_icon</item>
     </style>
 
@@ -30,17 +30,17 @@
 
     <style name="numberPickerCustom">
         <item name="android:textSize">25dp</item>
-        <item name="android:editTextColor">@color/white</item>
-        <item name="android:colorControlNormal">@color/white</item>
+        <item name="android:editTextColor">@color/text_color</item>
+        <item name="android:colorControlNormal">@color/text_color</item>
     </style>
 
     <style name="dialogTheme" parent="Theme.AppCompat.Dialog">
-        <item name="android:background">@color/backgroungblack</item>
+        <item name="android:background">@color/backgroundpurple</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowIsFloating">false</item>
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:navigationBarColor">@color/backgroungblack</item>
-        <item name="android:statusBarColor" tools:targetApi="l">@color/backgroungblack</item>
+        <item name="android:navigationBarColor">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
     </style>
 
     <style name="Theme.MADPT.NoActionBar">

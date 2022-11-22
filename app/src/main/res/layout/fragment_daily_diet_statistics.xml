@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/backgroungblack"
+    android:background="@color/backgroundpurple"
     tools:context=".statistics.DailyDietStatisticsFragment"
     android:weightSum="100"
     android:orientation="vertical">
@@ -21,7 +21,7 @@
             android:layout_weight="2"
             android:gravity="center|left"
             android:text="탄수화물"
-            android:textColor="@color/white" />
+            android:textColor="@color/text_color" />
 
         <View
             android:layout_width="0dp"
@@ -38,7 +38,7 @@
             android:gravity="center|left"
             android:layout_marginLeft="5dp"
             android:text="단백질"
-            android:textColor="@color/white" />
+            android:textColor="@color/text_color" />
 
         <View
             android:layout_width="0dp"
@@ -55,7 +55,7 @@
             android:gravity="center|left"
             android:layout_marginLeft="5dp"
             android:text="지방"
-            android:textColor="@color/white" />
+            android:textColor="@color/text_color" />
 
         <View
             android:layout_width="0dp"
@@ -127,7 +127,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
                     android:textSize="25dp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/text_color"
                     android:text="0" />
 
                 <TextView
@@ -135,7 +135,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:textSize="25dp"
-                    android:textColor="@color/white"
+                    android:textColor="@color/text_color"
                     android:text=" Kcal"/>
             </LinearLayout>
             <Space
@@ -147,7 +147,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:nestedScrollingEnabled="true"
-                android:background="@drawable/round_layout_meal">
+                android:background="@drawable/round_lauout_white">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -169,7 +169,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="4"
                             android:textSize="25dp"
-                            android:textColor="@color/white"
+                            android:textColor="@color/text_color"
                             android:fontFamily="@font/bold"
                             android:text="아침"/>
                         <LinearLayout
@@ -186,20 +186,20 @@
                                 android:layout_height="match_parent"
                                 android:text="총 "
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                             <TextView
                                 android:id="@+id/breakfast_total_kcal"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="0"
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text=" Kcal"
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -215,7 +215,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@drawable/round_layout_meal">
+                android:background="@drawable/round_lauout_white">
                 <LinearLayout
                     android:layout_marginTop="5dp"
                     android:layout_width="match_parent"
@@ -238,7 +238,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="4"
                             android:textSize="25dp"
-                            android:textColor="@color/white"
+                            android:textColor="@color/text_color"
                             android:fontFamily="@font/bold"
                             android:text="점심"/>
                         <LinearLayout
@@ -255,20 +255,20 @@
                                 android:layout_height="match_parent"
                                 android:text="총 "
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                             <TextView
                                 android:id="@+id/lunch_total_kcal"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="0"
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text=" Kcal"
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -284,7 +284,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@drawable/round_layout_meal">
+                android:background="@drawable/round_lauout_white">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -307,7 +307,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="4"
                             android:textSize="25dp"
-                            android:textColor="@color/white"
+                            android:textColor="@color/text_color"
                             android:fontFamily="@font/bold"
                             android:text="저녁"/>
                         <LinearLayout
@@ -324,20 +324,20 @@
                                 android:layout_height="match_parent"
                                 android:text="총 "
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                             <TextView
                                 android:id="@+id/dinner_total_kcal"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="0"
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text=" Kcal"
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                         </LinearLayout>
                     </LinearLayout>
                     <LinearLayout
@@ -353,7 +353,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:background="@drawable/round_layout_meal">
+                android:background="@drawable/round_lauout_white">
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -376,7 +376,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="4"
                             android:textSize="25dp"
-                            android:textColor="@color/white"
+                            android:textColor="@color/text_color"
                             android:fontFamily="@font/bold"
                             android:text="간식"/>
                         <LinearLayout
@@ -393,20 +393,20 @@
                                 android:layout_height="match_parent"
                                 android:text="총 "
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                             <TextView
                                 android:id="@+id/snack_total_kcal"
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text="0"
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="match_parent"
                                 android:text=" Kcal"
                                 android:textSize="25dp"
-                                android:textColor="@color/white"/>
+                                android:textColor="@color/text_color"/>
                         </LinearLayout>
                     </LinearLayout>
 

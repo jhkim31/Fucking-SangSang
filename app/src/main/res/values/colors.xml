@@ -20,6 +20,7 @@
     <color name="background_new">#E9EAF2</color>
     <color name="text_in_excrcise">#575757</color>
     <color name="recpurple">#E9EAF2</color>
+    <color name="text_color">#575757</color>
     <color name="btnpurple">#ADB5E2</color>
     <color name="maincolor">#B667F1</color>
     <color name="meal_input">#404040</color>

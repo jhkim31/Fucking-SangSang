@@ -75,7 +75,7 @@ class CalendarFragment : Fragment(), GetMonthDataList{
                     container.legendLayout.tag = month.yearMonth
                     container.legendLayout.children.map { it as TextView }.forEachIndexed { index, textView ->
                         textView.text = daysOfWeek[index].getDisplayName(TextStyle.SHORT, Locale.KOREA)
-                        textView.setTextColorRes(R.color.white)
+                        textView.setTextColorRes(R.color.black)
                         textView.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 10F)
                     }
                     month.yearMonth
@@ -148,7 +148,7 @@ class CalendarFragment : Fragment(), GetMonthDataList{
                 layout.layoutParams = LinearLayout.LayoutParams(binding.calendar.daySize.width, binding.calendar.daySize.width*2)
 
                 if (day.owner == DayOwner.THIS_MONTH) {
-                    textView.setTextColorRes(R.color.white)
+                    textView.setTextColorRes(R.color.black)
                     layout.setBackgroundResource(if (selectedDate == day.date) R.drawable.calendar_selected_bg else 0)
 
                     if (monthData[day.date] != null) {

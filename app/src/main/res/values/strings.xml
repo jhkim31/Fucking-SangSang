@@ -51,6 +51,7 @@
         <item>Keypoint</item>
     </string-array>
 
+
     <string name="title_activity_diet_main">DietMainActivity</string>
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
@@ -61,5 +62,6 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="kakao_app_key">eeb9d4a05fed2e23ca7c714d52e27349</string>
     <string name="kakao_native_key">kakaoeeb9d4a05fed2e23ca7c714d52e27349</string>
+
 
 </resources>

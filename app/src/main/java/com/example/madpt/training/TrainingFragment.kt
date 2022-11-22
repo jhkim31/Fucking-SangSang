@@ -36,9 +36,9 @@ class TrainingFragment : Fragment(), OnRecyclerClickListener, OnRemove, SetBreak
         2.toLong() to "SQUAT",
         3.toLong() to "LUNGE",
         4.toLong() to "SHOULDER PRESS",
-        5.toLong() to "MOUNTAIN CLIMBING",
+        5.toLong() to "SIDE LUNGE",
         6.toLong() to "SIDE LATERAL RAISE",
-        7.toLong() to "SIDE LUNGE",
+        7.toLong() to "MOUNTAIN CLIMBING",
         8.toLong() to "DUMBBEL CURL"
 
     )
@@ -47,9 +47,9 @@ class TrainingFragment : Fragment(), OnRecyclerClickListener, OnRemove, SetBreak
         2.toLong() to R.drawable.standing,
         3.toLong() to R.drawable.lunge,
         4.toLong() to R.drawable.shoulder_press,
-        5.toLong() to R.drawable.mountain_climbing,
+        5.toLong() to R.drawable.side_lunge,
         6.toLong() to R.drawable.side_lateral_raise,
-        7.toLong() to R.drawable.side_lunge,
+        7.toLong() to R.drawable.mountain_climbing,
         8.toLong() to R.drawable.dumbbell_curl
     )
 

@@ -16,9 +16,9 @@ class TrainingAdapter(private val context: Context, listener: OnRecyclerClickLis
         "SQUAT",
         "LUNGE",
         "SHOULDER PRESS",
-        "MOUNTAIN CLIMBING",
-        "SIDE LATERAL RAISE",
         "SIDE LUNGE",
+        "SIDE LATERAL RAISE",
+        "MOUNTAIN CLIMBING",
         "DUMBEL CURL"
     )
 
@@ -27,9 +27,9 @@ class TrainingAdapter(private val context: Context, listener: OnRecyclerClickLis
         R.drawable.standing,
         R.drawable.lunge,
         R.drawable.shoulder_press,
-        R.drawable.mountain_climbing,
-        R.drawable.side_lateral_raise,
         R.drawable.side_lunge,
+        R.drawable.side_lateral_raise,
+        R.drawable.mountain_climbing,
         R.drawable.dumbbell_curl
     )
 

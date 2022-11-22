@@ -96,7 +96,7 @@
             android:layout_weight="14"
             android:gravity="center|left"
             android:text="운동 리스트"
-            android:textColor="#575757"
+            android:textColor="@color/text_color"
             android:textSize="30dp" />
         <Button
             android:id="@+id/btn_breakTime"
