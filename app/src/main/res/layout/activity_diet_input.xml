@@ -107,7 +107,7 @@
                         android:layout_height="match_parent"
                         android:layout_marginRight="20dp"
                         android:gravity="center|right"
-                        android:text="1000Kcal"
+                        android:text="600Kcal"
                         android:textColor="@color/black"
                         android:textSize="17dp" />
 
@@ -155,12 +155,13 @@
                             android:background="@null"
                             android:fontFamily="@font/notosan_medium"
                             android:hint="메뉴 검색하기"
-                            android:textSize="15dp"
-                            android:textColor="#d3d3d3"
-                            android:textColorHint="@color/black"/>
+                            android:textStyle="italic"
+                            android:textColor="@color/black"
+                            android:textColorHint="#d3d3d3"
+                            android:textSize="15dp" />
 
                         <Button
-                            android:id="@+id/search_button"
+                            android:id="@+id/food_search_button"
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="4"
@@ -245,7 +246,8 @@
                         android:layout_weight="6"
                         android:gravity="left|bottom"
                         android:text="아침 식단"
-                        android:textSize="20dp" />
+                        android:textSize="20dp"
+                        android:textColor="@color/black"/>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -260,17 +262,17 @@
                             android:layout_height="match_parent"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="10"
-                            android:text="제육볶음"
                             android:fontFamily="@font/notosan_medium"
-                            android:gravity="center|left"/>
+                            android:gravity="center|left"
+                            android:text="제육볶음" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="10"
-                            android:text="949Kcal"
-                            android:gravity="center|right"/>
+                            android:gravity="center|right"
+                            android:text="320Kcal" />
 
                     </LinearLayout>
 
@@ -288,16 +290,16 @@
                             android:layout_marginLeft="10dp"
                             android:layout_weight="10"
                             android:fontFamily="@font/notosan_medium"
-                            android:text="제육볶음"
-                            android:gravity="center|left"/>
+                            android:gravity="center|left"
+                            android:text="공기밥" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="10"
-                            android:text="949Kcal"
-                            android:gravity="center|right"/>
+                            android:gravity="center|right"
+                            android:text="200Kcal" />
 
                     </LinearLayout>
 
@@ -315,16 +317,16 @@
                             android:layout_marginLeft="10dp"
                             android:layout_weight="10"
                             android:fontFamily="@font/notosan_medium"
-                            android:text="제육볶음"
-                            android:gravity="center|left"/>
+                            android:gravity="center|left"
+                            android:text="콜라" />
 
                         <TextView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_marginLeft="10dp"
                             android:layout_weight="10"
-                            android:text="949Kcal"
-                            android:gravity="center|right"/>
+                            android:gravity="center|right"
+                            android:text="50Kcal" />
 
                     </LinearLayout>
 
@@ -336,83 +338,62 @@
                         android:weightSum="20">
 
 
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_weight="10"
-                            android:fontFamily="@font/notosan_medium"
-                            android:text="제육볶음"
-                            android:gravity="center|left"/>
-
-                        <TextView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="10dp"
-                            android:layout_weight="10"
-                            android:text="949Kcal"
-                            android:gravity="center|right"/>
 
                     </LinearLayout>
-
 
                 </LinearLayout>
 
-
             </LinearLayout>
-
 
         </LinearLayout>
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="3"/>
+            android:layout_weight="3" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:orientation="horizontal"
             android:layout_weight="11"
+            android:orientation="horizontal"
             android:weightSum="20">
 
             <Space
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="8.5"
-                android:weightSum="20"
+                android:background="@drawable/round_layout_button"
                 android:orientation="vertical"
-                android:background="@drawable/round_layout_button">
+                android:weightSum="20">
 
                 <Space
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="4"/>
+                    android:layout_weight="4" />
 
                 <ImageButton
                     android:id="@+id/direct_input_button"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="9"
-                    android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/plus_white"
-                    android:background="@android:color/transparent"/>
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/plus_white" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="4"
+                    android:gravity="center"
                     android:text="직접입력"
-                    android:textSize="12dp"
-                    android:gravity="center"/>
-
-
+                    android:textSize="12dp" />
 
 
             </LinearLayout>
@@ -420,42 +401,40 @@
             <Space
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_weight="1" />
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="8.5"
-                android:weightSum="20"
+                android:background="@drawable/round_layout_summary"
                 android:orientation="vertical"
-                android:background="@drawable/round_layout_summary">
+                android:weightSum="20">
 
                 <Space
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
-                    android:layout_weight="4"/>
+                    android:layout_weight="4" />
 
                 <ImageButton
                     android:id="@+id/save_button"
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="9"
-                    android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/check"
-                    android:background="@android:color/transparent"/>
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/check" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="0dp"
                     android:layout_weight="4"
+                    android:gravity="center"
                     android:text="저장"
-                    android:textSize="12dp"
-                    android:gravity="center"/>
+                    android:textSize="12dp" />
 
             </LinearLayout>
-
-
 
 
         </LinearLayout>

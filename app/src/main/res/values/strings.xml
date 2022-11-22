@@ -63,6 +63,8 @@
     <string name="kakao_app_key">eeb9d4a05fed2e23ca7c714d52e27349</string>
     <string name="kakao_native_key">kakaoeeb9d4a05fed2e23ca7c714d52e27349</string>
     <string name="title_activity_diet_input">DietInputActivity</string>
+    <string name="title_activity_search_food_data_modify_save2">SearchFoodDataModifySave2Activity
+    </string>
 
 
 </resources>

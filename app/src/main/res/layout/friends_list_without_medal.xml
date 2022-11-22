@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
-    app:cardBackgroundColor="@color/meal_input"
+    app:cardBackgroundColor="#d3d3d3"
     app:cardCornerRadius="12dp"
     app:cardElevation="3dp"
     app:contentPadding="4dp">
@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:text="1"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:fontFamily="@font/bold"
                 android:gravity="center"
                 android:textSize="20dp"
@@ -48,7 +48,7 @@
             android:layout_height="match_parent"
             android:layout_weight="20"
             android:text="김성환"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:textSize="20dp"
             android:fontFamily="@font/bold"
             android:gravity="center|left" />
@@ -59,7 +59,7 @@
             android:layout_weight="10"
             android:layout_height="match_parent"
             android:text="100"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:gravity="right|center"
             android:fontFamily="@font/bold"
             android:textSize="20dp"/>
@@ -68,7 +68,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="Kcal"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
             android:gravity="left|center"
             android:fontFamily="@font/bold"
             android:textSize="20dp"/>

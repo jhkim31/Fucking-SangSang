@@ -1,10 +1,8 @@
 package com.example.madpt.main
 
-import android.app.ProgressDialog.show
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,9 +12,8 @@ import com.example.madpt.API.food.GetSummaryData
 import com.example.madpt.API.statistic.GetSummaryDataCall
 import com.example.madpt.API.statistic.SummaryData
 import com.example.madpt.databinding.FragmentMainPage2Binding
-import com.example.madpt.databinding.FragmentMainPageBinding
 import com.example.madpt.diet.DietMainActivity
-import com.example.madpt.diet.DietPageActivity
+
 
 class MainPageFragment2 : Fragment(), GetSummaryData {
 
@@ -54,11 +51,21 @@ class MainPageFragment2 : Fragment(), GetSummaryData {
         }
 
         binding.exerciseButton.setOnClickListener() {
+            mainActivity!!.changeFragment(3)
+        }
+
+        binding.dietButton.setOnClickListener {
             val intent = Intent(context, DietMainActivity::class.java)
-            intent.putExtra("diet_type", "Breakfast")
             startActivity(intent)
         }
 
+        binding.staticButton.setOnClickListener {
+            mainActivity!!.changeFragment(3)
+        }
+
+        binding.trainerButton.setOnClickListener {
+            mainActivity!!.changeFragment(1)
+        }
         return binding.root
     }
 

@@ -1,84 +1,88 @@
 package com.example.madpt.diet
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.ListView
-import com.example.madpt.*
-import com.example.madpt.API.diet.AddFoodList
-import com.example.madpt.API.diet.PostDietListCall
-import com.example.madpt.API.diet.daily_diet
-import com.example.madpt.API.food.PostDietList
+import com.example.madpt.API.food.GetFoodList
+import com.example.madpt.API.food.GetFoodListCall
+import com.example.madpt.API.food.food_list
 import com.example.madpt.databinding.ActivityDietInputBinding
-import com.example.madpt.databinding.ActivityDietMainBinding
-import com.example.madpt.databinding.ActivityDietPageBinding
-import com.example.madpt.main.MainPageFragment
-import java.time.LocalDateTime
+import com.example.madpt.databinding.ActivityDietSearchBinding
 
-var dataSumKcal : Int = 0
-var allSumKcal : Int = 0
+class DietInputActivity : AppCompatActivity(), GetFoodList {
 
 
-class DietInputActivity : AppCompatActivity(), PostDietList {
-    private lateinit var binding: ActivityDietMainBinding
+    private lateinit var binding: ActivityDietInputBinding
+
+    private var food_search_result_list = ArrayList<food_list>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
-
-
         super.onCreate(savedInstanceState)
         binding = ActivityDietInputBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val dietType = intent.getStringExtra("diet_type")
 
-        binding.foodSearchIntentButton.setOnClickListener(){
-            val intent = Intent(this,DietSearchActivity::class.java)
-            startActivity(intent)
+        setupEvents()
+
+        binding.foodSearchListview.setOnItemClickListener{parent,view,position,id ->
+            val clickedRoom: food_list = food_search_result_list[position]
+            val mIntent = Intent(this,SearchFoodDataModifySave2Activity::class.java)
+            mIntent.putExtra("roomInfo",clickedRoom)
+            startActivity(mIntent)
+            finish()
         }
 
-        binding.customFoodIntentButton.setOnClickListener(){
-            val intent = Intent(this,CustomFoodDataModifySaveActivity::class.java)
-            startActivity(intent)
+        binding.backMove.setOnClickListener {
+            finish()
         }
 
-        binding.dietSaveButton.setOnClickListener(){
-            val saveDiet = daily_diet(date = System.currentTimeMillis(), diet_type = dietType!!,simple_total_kcal = sumSimpleKcal.toDouble(), diet_list = AddFoodList)
-            PostDietListCall(this, this).PostDiet(saveDiet)
+        binding.saveButton.setOnClickListener {
+            finish()
         }
-
     }
 
-    override fun onRestart() {
-        dataSumKcal = 0
-        val foodListAdapter = FoodListViewAdapter(this, AddFoodList)
-        binding.listview1.adapter = foodListAdapter
-        setSumKcal()
-        super.onRestart()
+    fun setupEvents() {
+
+        binding.foodSearchButton.setOnClickListener() {
+            var textlengh: Int = binding.foodSearchBar.text.length
+            food_search_result_list.clear()
+            var foodSearchText = binding.foodSearchBar.text.toString()
+            GetFoodListCall(this, this).Get(foodSearchText)
+//            for (i in FoodList.indices) {
+//                var temp_food_maker: String?
+//                if (FoodList[i].maker_name.toString()
+//                        .contains(foodSearchText) || FoodList[i].food_name.contains(foodSearchText)
+//                ) {
+//                    if (FoodList[i].maker_name.equals("")) {
+//                        temp_food_maker = FoodList[i].maker_name
+//                    } else {
+//                        temp_food_maker = "[" + FoodList[i].maker_name + "]"
+//                    }
+//                    food_search_result_list.add(
+//                        FoodData(
+//                            food_id = FoodList[i].food_id,
+//                            food_name = FoodList[i].food_name,
+//                            maker_name = temp_food_maker,
+//                            default_kcal = FoodList[i].default_kcal,
+//                            default_weight = FoodList[i].default_weight,
+//                            default_carbohydrate = FoodList[i].default_carbohydrate,
+//                            default_fat = FoodList[i].default_fat,
+//                            default_protein = FoodList[i].default_protein
+//                        )
+//                    )
+//                }
+//            }
+            val foodListAdapter = FoodSearchListViewAdapter(this, food_search_result_list)
+            binding.foodSearchListview.adapter = foodListAdapter
+        }
     }
 
-
-}
-fun setSumKcal(){
-    dataSumKcal = 0
-    for(i in AddFoodList.indices){
-        dataSumKcal += AddFoodList[i].diet_kcal.toInt()
+    override fun getFoodList(testing: ArrayList<food_list>) {
+        food_search_result_list = testing
+        binding.foodSearchListview.adapter=FoodSearchListViewAdapter(this, food_search_result_list)
     }
-    allSumKcal = dataSumKcal+sumSimpleKcal
-    if(allSumKcal<=0) {
-        allSumKcal = 0
-        sumSimpleKcal = 0
-    }
-    binding.sumKcal.setText(allSumKcal.toString())
 }
 
 
-override fun postDietList() {
-    val intent = Intent(this, MainActivity::class.java)
-    AddFoodList.clear()
-    startActivity(intent)
-    finish()
-}
-}
+
+
+

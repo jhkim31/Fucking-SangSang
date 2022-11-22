@@ -23,12 +23,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADPT">
         <activity
-            android:name=".DietInputActivity"
+            android:name=".diet.SearchFoodDataModifySave2Activity"
             android:exported="false"
-            android:label="@string/title_activity_diet_input"
+            android:label="@string/title_activity_search_food_data_modify_save2"
             android:theme="@style/Theme.MADPT.NoActionBar" />
         <activity
-            android:name=".DietMainActivity"
+            android:name=".TrainerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".diet.DietInputActivity"
+            android:exported="false"
+            android:label="@string/title_activity_diet_input"
+            android:theme="@style/Theme.MADPT.NoActionBar"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".diet.DietMainActivity"
             android:exported="false"
             android:label="@string/title_activity_diet_main"
             android:theme="@style/Theme.MADPT.NoActionBar" />

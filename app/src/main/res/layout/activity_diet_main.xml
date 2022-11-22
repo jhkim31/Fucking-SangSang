@@ -372,6 +372,7 @@
                         android:layout_marginTop="4dp"/>
 
                     <ImageButton
+                        android:id="@+id/breakfast_button"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="10"
@@ -392,7 +393,7 @@
                         android:layout_weight="4"
                         android:fontFamily="@font/notosan_bold"
                         android:gravity="center|left"
-                        android:text="300Kcal" />
+                        android:text="600Kcal" />
 
                 </LinearLayout>
 
@@ -428,6 +429,7 @@
                         android:layout_marginTop="4dp"/>
 
                     <ImageButton
+                        android:id="@+id/lunch_button"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="10"
@@ -449,7 +451,7 @@
                         android:layout_weight="4"
                         android:fontFamily="@font/notosan_bold"
                         android:gravity="center|left"
-                        android:text="300Kcal" />
+                        android:text="600Kcal" />
 
                     </LinearLayout>
 
@@ -501,6 +503,7 @@
                         android:layout_weight="2"/>
 
                     <ImageButton
+                        android:id="@+id/dinner_button"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="6"
@@ -522,7 +525,7 @@
                         android:layout_weight="4"
                         android:fontFamily="@font/notosan_bold"
                         android:gravity="center|left"
-                        android:text="0Kcal" />>
+                        android:text="0Kcal"/>
 
                 </LinearLayout>
 
@@ -555,6 +558,7 @@
                         android:layout_weight="2"/>
 
                     <ImageButton
+                        android:id="@+id/snack_button"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="6"
@@ -562,7 +566,6 @@
                         android:scaleType="fitCenter"
                         android:adjustViewBounds="true"
                         android:background="@android:color/transparent"/>
-
 
                     <Space
                         android:layout_width="match_parent"

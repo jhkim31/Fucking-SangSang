@@ -15,6 +15,11 @@ class CommunityMainFragment : Fragment() {
         super.onCreate(savedInstanceState)
     }
 
+    var DataList = arrayListOf(
+        Data("단백질 얼마나 먹어야 하나요?"),
+        Data("운동 루틴 추천해주세요.")
+    )
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -32,6 +37,8 @@ class CommunityMainFragment : Fragment() {
                 binding.noticeBoardList.visibility = View.VISIBLE
             }
         }
+
+        binding.textList.adapter = CustomAdapter(requireContext(),DataList)
         return binding.root
     }
 }
