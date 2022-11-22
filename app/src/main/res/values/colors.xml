@@ -17,6 +17,8 @@
     <color name="calendar_toolbar_color">#282828</color>
     <color name="backgroungblack">#292929</color>
     <color name="backgroundpurple">#E9EAF2</color>
+    <color name="background_new">#E9EAF2</color>
+    <color name="text_in_excrcise">#575757</color>
     <color name="recpurple">#E9EAF2</color>
     <color name="btnpurple">#ADB5E2</color>
     <color name="maincolor">#B667F1</color>

@@ -403,6 +403,7 @@
                         android:layout_weight="16"
                         android:background="@drawable/round_layout_summary"
                         android:gravity="center|left"
+                        android:fontFamily="@font/notosan_bold"
                         android:text="현재 1000Kcal 태우기 챌린지 도전중"
                         android:textColor="@color/black"
                         android:textSize="13dp" />
@@ -446,11 +447,15 @@
                         android:layout_height="0dp"
                         android:layout_weight="3" />
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/exercise_button"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="10"
-                        android:src="@drawable/fire" />
+                        android:src="@drawable/weights"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent" />
 
 
                     <TextView
@@ -482,11 +487,15 @@
                         android:layout_height="0dp"
                         android:layout_weight="3" />
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/diet_button"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="10"
-                        android:src="@drawable/fire" />
+                        android:src="@drawable/dinner"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"/>
 
 
                     <TextView
@@ -534,11 +543,15 @@
                         android:layout_height="0dp"
                         android:layout_weight="3" />
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/trainer_button"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="10"
-                        android:src="@drawable/fire" />
+                        android:src="@drawable/personal"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"/>
 
 
                     <TextView
@@ -571,11 +584,15 @@
                         android:layout_height="0dp"
                         android:layout_weight="3" />
 
-                    <ImageView
+                    <ImageButton
+                        android:id="@+id/static_button"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="10"
-                        android:src="@drawable/fire" />
+                        android:src="@drawable/statistic"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"/>
 
 
                     <TextView

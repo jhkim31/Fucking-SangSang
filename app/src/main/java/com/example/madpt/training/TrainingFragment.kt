@@ -1,6 +1,7 @@
 package com.example.madpt.training
 
 import android.content.Intent
+import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -12,6 +13,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.madpt.API.routine.PostTrainRoutine
 import com.example.madpt.R
 import com.example.madpt.databinding.FragmentExcerciseBinding
@@ -117,10 +119,12 @@ class TrainingFragment : Fragment(), OnRecyclerClickListener, OnRemove, SetBreak
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val customDecoration = CustomDecoration(1f,1f, Color.TRANSPARENT)
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
         binding.recyclerView.adapter = TrainingAdapter(requireContext(), this)
 
         binding.trainListRecyclerView.layoutManager = LinearLayoutManager(requireContext()).also { it.orientation = LinearLayoutManager.HORIZONTAL }
+        binding.trainListRecyclerView.addItemDecoration(customDecoration)
         binding.trainListRecyclerView.adapter = TrainingList(trainList, this, requireContext(), this)
 
         val recyclerViewAdapter = TrainingList(trainList, this, requireContext(), this)

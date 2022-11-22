@@ -1,42 +1,83 @@
 package com.example.madpt.diet
 
-import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.madpt.R
+import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.ListView
+import com.example.madpt.*
+import com.example.madpt.API.diet.AddFoodList
+import com.example.madpt.API.diet.PostDietListCall
+import com.example.madpt.API.diet.daily_diet
+import com.example.madpt.API.food.PostDietList
 import com.example.madpt.databinding.ActivityDietMainBinding
+import com.example.madpt.databinding.ActivityDietPageBinding
+import com.example.madpt.main.MainPageFragment
+import java.time.LocalDateTime
+
+var dataSumKcal : Int = 0
+var allSumKcal : Int = 0
 
 
-class DietMainActivity : AppCompatActivity() {
-
-    private lateinit var appBarConfiguration: AppBarConfiguration
+class DietMainActivity : AppCompatActivity(), PostDietList {
     private lateinit var binding: ActivityDietMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
         super.onCreate(savedInstanceState)
-
-        binding = ActivityDietMainBinding.inflate(layoutInflater)
+        binding = ActivityDietPageBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val dietType = intent.getStringExtra("diet_type")
 
-        setSupportActionBar(binding.toolbar)
-
-        val navController = findNavController(R.id.nav_host_fragment_content_diet_main)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
-
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
+        binding.foodSearchIntentButton.setOnClickListener(){
+            val intent = Intent(this,DietSearchActivity::class.java)
+            startActivity(intent)
         }
+
+        binding.customFoodIntentButton.setOnClickListener(){
+            val intent = Intent(this,CustomFoodDataModifySaveActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.dietSaveButton.setOnClickListener(){
+            val saveDiet = daily_diet(date = System.currentTimeMillis(), diet_type = dietType!!,simple_total_kcal = sumSimpleKcal.toDouble(), diet_list = AddFoodList)
+            PostDietListCall(this, this).PostDiet(saveDiet)
+        }
+
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_diet_main)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
+    override fun onRestart() {
+        dataSumKcal = 0
+        val foodListAdapter = FoodListViewAdapter(this, AddFoodList)
+        binding.listview1.adapter = foodListAdapter
+        setSumKcal()
+        super.onRestart()
+    }
+
+
+    }
+    fun setSumKcal(){
+        dataSumKcal = 0
+        for(i in AddFoodList.indices){
+            dataSumKcal += AddFoodList[i].diet_kcal.toInt()
+        }
+        allSumKcal = dataSumKcal+sumSimpleKcal
+        if(allSumKcal<=0) {
+            allSumKcal = 0
+            sumSimpleKcal = 0
+        }
+        binding.sumKcal.setText(allSumKcal.toString())
+    }
+
+
+    override fun postDietList() {
+        val intent = Intent(this, MainActivity::class.java)
+        AddFoodList.clear()
+        startActivity(intent)
+        finish()
     }
 }
