@@ -59,6 +59,13 @@ class MainPageFragment2 : Fragment(), GetSummaryData {
             startActivity(intent)
         }
 
+        binding.staticButton.setOnClickListener {
+            mainActivity!!.changeFragment(3)
+        }
+
+        binding.trainerButton.setOnClickListener {
+            mainActivity!!.changeFragment(1)
+        }
         return binding.root
     }
 

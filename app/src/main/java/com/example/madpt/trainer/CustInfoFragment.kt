@@ -29,10 +29,10 @@ class CustInfoFragment : Fragment() {
         Glide.with(this).load(SplashActivity.userProfile).into(binding.profileCust1)
         Glide.with(this).load(SplashActivity.userProfile).into(binding.profileCust2)
 
-//        val mActivity = activity as MainActivity
-//        binding.backMove.setOnClickListener{
-//            mainActivity!!.changeFragment(1)
-//        }
+        val mActivity = activity as MainActivity
+        binding.backMove.setOnClickListener{
+            mainActivity!!.changeFragment(1)
+        }
 
         return binding.root
     }
