@@ -59,26 +59,25 @@ class DietInputActivity : AppCompatActivity(), PostDietList {
         super.onRestart()
     }
 
-
-}
-fun setSumKcal(){
-    dataSumKcal = 0
-    for(i in AddFoodList.indices){
-        dataSumKcal += AddFoodList[i].diet_kcal.toInt()
+    fun setSumKcal(){
+        dataSumKcal = 0
+        for(i in AddFoodList.indices){
+            dataSumKcal += AddFoodList[i].diet_kcal.toInt()
+        }
+        allSumKcal = dataSumKcal+sumSimpleKcal
+        if(allSumKcal<=0) {
+            allSumKcal = 0
+            sumSimpleKcal = 0
+        }
+        com.example.madpt.diet.binding.sumKcal.setText(allSumKcal.toString())
     }
-    allSumKcal = dataSumKcal+sumSimpleKcal
-    if(allSumKcal<=0) {
-        allSumKcal = 0
-        sumSimpleKcal = 0
+
+
+    override fun postDietList() {
+        val intent = Intent(this, MainActivity::class.java)
+        AddFoodList.clear()
+        startActivity(intent)
+        finish()
     }
-    binding.sumKcal.setText(allSumKcal.toString())
-}
 
-
-override fun postDietList() {
-    val intent = Intent(this, MainActivity::class.java)
-    AddFoodList.clear()
-    startActivity(intent)
-    finish()
-}
 }
