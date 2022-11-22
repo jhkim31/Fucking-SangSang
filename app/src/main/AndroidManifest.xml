@@ -23,6 +23,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADPT">
         <activity
+            android:name=".DietInputActivity"
+            android:exported="false"
+            android:label="@string/title_activity_diet_input"
+            android:theme="@style/Theme.MADPT.NoActionBar" />
+        <activity
             android:name=".DietMainActivity"
             android:exported="false"
             android:label="@string/title_activity_diet_main"
@@ -63,7 +68,7 @@
                 <!-- Redirect URI: "kakao{NATIVE_APP_KEY}://oauth“ -->
                 <data
                     android:host="oauth"
-                    android:scheme="@string/kakao_native_key"/>
+                    android:scheme="@string/kakao_native_key" />
             </intent-filter>
         </activity>
         <activity

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diet.DietInputActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/recpurple"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="58"
+            android:orientation="vertical"
+            android:weightSum="57">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@drawable/top_bottom_stroke"
+                android:weightSum="20">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="14"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2" />
+
+                    <Button
+                        android:id="@+id/backMove"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="6"
+                        android:background="#00ff0000"
+                        android:gravity="center|left"
+                        android:text="◀ 뒤로가기" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="horizontal"
+                android:weightSum="20">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="18"
+                    android:background="@drawable/round_lauout_white"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/notosan_medium"
+                        android:gravity="center"
+                        android:text="현재식단 총 칼로리"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="20dp"
+                        android:gravity="center|right"
+                        android:text="1000Kcal"
+                        android:textColor="@color/black"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="38"
+                android:orientation="vertical"
+                android:weightSum="37">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="6"
+                    android:weightSum="20">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="18"
+                        android:background="@drawable/round_lauout_bottom_plat_white"
+                        android:orientation="horizontal"
+                        android:weightSum="20">
+
+                        <EditText
+                            android:id="@+id/food_search_bar"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="15"
+                            android:background="@null"
+                            android:fontFamily="@font/notosan_medium"
+                            android:hint="메뉴 검색하기"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black" />
+
+                        <Button
+                            android:id="@+id/search_button"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="4"
+                            android:background="@null"
+                            android:fontFamily="@font/notosan_medium"
+                            android:text="검색"
+                            android:textSize="15dp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="31"
+                    android:orientation="horizontal"
+                    android:weightSum="20">
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <ListView
+                        android:id="@+id/food_search_listview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="18"
+                        android:background="@drawable/round_lauout_top_plat_white"
+                        android:fontFamily="@font/notosan_light"
+                        android:textFilterEnabled="true" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="24"
+            android:orientation="horizontal"
+            android:weightSum="20">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="18"
+                android:background="@drawable/round_lauout_white"
+                android:orientation="horizontal"
+                android:weightSum="20">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="18"
+                    android:orientation="vertical"
+                    android:weightSum="30">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="6"
+                        android:gravity="left|bottom"
+                        android:text="아침 식단"
+                        android:textSize="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="20">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="10"
+                            android:text="제육볶음"
+                            android:fontFamily="@font/notosan_medium"
+                            android:gravity="center|left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="10"
+                            android:text="949Kcal"
+                            android:gravity="center|right"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="20">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="10"
+                            android:fontFamily="@font/notosan_medium"
+                            android:text="제육볶음"
+                            android:gravity="center|left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="10"
+                            android:text="949Kcal"
+                            android:gravity="center|right"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="20">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="10"
+                            android:fontFamily="@font/notosan_medium"
+                            android:text="제육볶음"
+                            android:gravity="center|left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="10"
+                            android:text="949Kcal"
+                            android:gravity="center|right"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="5"
+                        android:orientation="horizontal"
+                        android:weightSum="20">
+
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="10"
+                            android:fontFamily="@font/notosan_medium"
+                            android:text="제육볶음"
+                            android:gravity="center|left"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="10"
+                            android:text="949Kcal"
+                            android:gravity="center|right"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="16"
+            android:weightSum="20">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

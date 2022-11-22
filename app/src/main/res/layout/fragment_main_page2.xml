@@ -462,7 +462,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="4"
-                        android:fontFamily="@font/NotoSansKR_Bold"
+                        android:fontFamily="@font/notosan_bold"
                         android:gravity="center"
                         android:text="운동"
                         android:textColor="@color/black" />
@@ -502,7 +502,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="4"
-                        android:fontFamily="@font/NotoSansKR_Bold"
+                        android:fontFamily="@font/notosan_bold"
                         android:gravity="center"
                         android:text="식단"
                         android:textColor="@color/black" />
@@ -558,7 +558,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="4"
-                        android:fontFamily="@font/NotoSansKR_Bold"
+                        android:fontFamily="@font/notosan_bold"
                         android:gravity="center"
                         android:text="트레이너"
                         android:textColor="@color/black" />
@@ -599,7 +599,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="4"
-                        android:fontFamily="@font/NotoSansKR_Bold"
+                        android:fontFamily="@font/notosan_bold"
                         android:gravity="center"
                         android:text="통계"
                         android:textColor="@color/black" />

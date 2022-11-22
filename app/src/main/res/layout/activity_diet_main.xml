@@ -371,11 +371,14 @@
                         android:layout_marginLeft="6dp"
                         android:layout_marginTop="4dp"/>
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="10"
-                        android:src="@drawable/breakfast" />
+                        android:src="@drawable/breakfast"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"/>
 
                     <Space
                         android:layout_width="match_parent"
@@ -424,11 +427,14 @@
                         android:layout_marginLeft="6dp"
                         android:layout_marginTop="4dp"/>
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="10"
-                        android:src="@drawable/breakfast"/>
+                        android:src="@drawable/breakfast"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"/>
 
 
                     <Space
@@ -494,11 +500,14 @@
                         android:layout_height="0dp"
                         android:layout_weight="2"/>
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="6"
-                        android:src="@drawable/image" />
+                        android:src="@drawable/image"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"/>
 
 
                     <Space
@@ -545,11 +554,14 @@
                         android:layout_height="0dp"
                         android:layout_weight="2"/>
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="6"
-                        android:src="@drawable/image" />
+                        android:src="@drawable/image"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"/>
 
 
                     <Space
