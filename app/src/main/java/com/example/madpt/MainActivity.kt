@@ -13,6 +13,8 @@ import com.example.madpt.main.PutWeightDialog
 import com.example.madpt.more.MoreFragment
 import com.example.madpt.social.SocialFragment
 import com.example.madpt.statistics.StatisticsFragment
+import com.example.madpt.trainer.ChatFragment
+import com.example.madpt.trainer.CustInfoFragment
 import com.example.madpt.training.TrainingFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -94,5 +96,20 @@ class MainActivity : AppCompatActivity() {
         customDialog.show(supportFragmentManager, "PutWeightDialog")
     }
 
+//    fun changeFragment(index: Int){
+//        when(index){
+//            1 -> {
+//                val transaction = supportFragmentManager.beginTransaction()
+//                transaction.add(R.id.fl_container, ChatFragment())
+//                transaction.commit()
+//            }
+//
+//            2 -> {
+//                val transaction = supportFragmentManager.beginTransaction()
+//                transaction.add(R.id.fl_container, CustInfoFragment())
+//                transaction.commit()
+//            }
+//        }
+//    }
 
 }
