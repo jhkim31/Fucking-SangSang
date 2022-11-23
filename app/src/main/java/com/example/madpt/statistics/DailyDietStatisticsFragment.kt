@@ -88,7 +88,7 @@ class DailyDietStatisticsFragment : Fragment(),GetDailyDietList {
         layoutParams.setMargins(0,0,margin,0)
         newFoodText.layoutParams = layoutParams
         newFoodText.gravity = Gravity.RIGHT
-        newFoodText.setTextColor(Color.WHITE)
+        newFoodText.setTextColor(Color.BLACK)
         newFoodText.setTextSize(Dimension.DP,40F)
         newFoodText.text = foodType
         if(dietType == "Breakfast") {
