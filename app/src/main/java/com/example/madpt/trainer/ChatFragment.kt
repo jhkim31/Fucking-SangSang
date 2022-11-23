@@ -27,7 +27,6 @@ class ChatFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentChatBinding.inflate(inflater, container, false)
-        Glide.with(this).load(SplashActivity.userProfile).into(binding.profile)
 
         binding.nextInfoPage.setOnClickListener{
             mainActivity!!.changeFragment(2)

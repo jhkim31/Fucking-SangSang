@@ -26,8 +26,6 @@ class CustInfoFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentCustInfoBinding.inflate(inflater, container, false)
-        Glide.with(this).load(SplashActivity.userProfile).into(binding.profileCust1)
-        Glide.with(this).load(SplashActivity.userProfile).into(binding.profileCust2)
 
         val mActivity = activity as MainActivity
         binding.backMove.setOnClickListener{

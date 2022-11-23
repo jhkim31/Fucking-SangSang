@@ -135,7 +135,8 @@
                     android:id="@+id/profileCust1"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"/>
+                    android:layout_weight="3"
+                    android:src="@drawable/member"/>
 
                 <Space
                     android:layout_width="0dp"
@@ -429,7 +430,8 @@
                     android:id="@+id/profileCust2"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="3"/>
+                    android:layout_weight="3"
+                    android:src="@drawable/member"/>
 
                 <Space
                     android:layout_width="0dp"
