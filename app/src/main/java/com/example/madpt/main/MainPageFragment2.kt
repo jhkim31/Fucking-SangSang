@@ -51,7 +51,7 @@ class MainPageFragment2 : Fragment(), GetSummaryData {
         }
 
         binding.exerciseButton.setOnClickListener() {
-            mainActivity!!.changeFragment(3)
+            mainActivity!!.changeFragment(4)
         }
 
         binding.dietButton.setOnClickListener {

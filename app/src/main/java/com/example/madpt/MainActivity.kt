@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
                         changeFragment(SocialFragment(),"social")
                     }
                     R.id.community -> {
-                        changeFragment(CommunityMainFragment(),"social")
+                        changeFragment(CommunityMainFragment(),"community")
                     }
                     else -> {
                         changeFragment(MoreFragment(),"more")
@@ -109,6 +109,13 @@ class MainActivity : AppCompatActivity() {
             3 ->{
                 supportFragmentManager.beginTransaction()
                     .replace(R.id.fl_container, StatisticsFragment())
+                    .addToBackStack(null)
+                    .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                    .commit()
+            }
+            4 ->{
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fl_container, TrainingFragment())
                     .addToBackStack(null)
                     .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                     .commit()

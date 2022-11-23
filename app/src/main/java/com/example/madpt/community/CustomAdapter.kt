@@ -8,7 +8,7 @@ import android.widget.BaseAdapter
 import android.widget.TextView
 import com.example.madpt.R
 
-class Data(val text: String)
+class Data(val text: String,val name:String, val date: String, val views: String)
 
 class CustomAdapter(val context: Context, val DataList:ArrayList<Data>): BaseAdapter() {
 
@@ -22,9 +22,15 @@ class CustomAdapter(val context: Context, val DataList:ArrayList<Data>): BaseAda
         val view: View = LayoutInflater.from(context).inflate(R.layout.custom_list, null)
 
         val text = view.findViewById<TextView>(R.id.textId)
+        val name = view.findViewById<TextView>(R.id.nameId)
+        val date = view.findViewById<TextView>(R.id.dateId)
+        val views = view.findViewById<TextView>(R.id.views)
         val data = DataList[p0]
 
         text.text = data.text
+        name.text = data.name
+        date.text = data.date
+        views.text = data.views
         return view
     }
 
